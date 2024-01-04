@@ -1,4 +1,5 @@
-   computedWOTimerDuration(item)
+//NYR Solutions - Maximo4you.fr
+computedWOTimerDuration(item)
    {
      let duration=0;
      if (item && item.labtrans && item.labtrans.length > 0) {
