@@ -1,3 +1,5 @@
+//NYR Solutions - Maximo4you.fr
+
 woStatusFilter(item) {
   // Retourne l'inverse de nos résultats souhaités (éléments à supprimer).
   return !['WMATL', 'INPRG', 'CUSTOMCOMP'].includes(item.value);
