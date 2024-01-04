@@ -1,1 +1,2 @@
-
+<!-- Ajouter à l'id="woDetailResource" -->
+<attribute sub-type="DURATION" local="true" name="computedtimerduration"/>
