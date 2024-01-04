@@ -1,0 +1,14 @@
+woStatusFilter(item) {
+  // Retourne l'inverse de nos résultats souhaités (éléments à supprimer).
+  return !['WMATL', 'INPRG', 'CUSTOMCOMP'].includes(item.value);
+}
+
+async onAfterLoadData(dataSource, items) {
+  if (dataSource && dataSource.name === "dsstatusDomainList") {
+    // Assurez-vous qu'il y a au moins un enregistrement.
+    if (items && items.length > 0) {
+      let filteredItems = items.filter(this.woStatusFilter);
+      await dataSource.deleteItems(filteredItems);
+    }
+  }
+}
