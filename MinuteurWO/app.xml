@@ -1,2 +1,13 @@
+<!--code - Source de données -->
 <!-- Ajouter à l'id="woDetailResource" -->
 <attribute sub-type="DURATION" local="true" name="computedtimerduration"/>
+
+<!-- code - Affichage -->
+<!-- Ajouter en dessous de la balise </middle> de l'id="w7q4y" -->
+<bottom id="abc100">
+    <box fill-child="true" id="abc101" hidden="{!woDetailResource.item.computedWOTimerStatus}">
+    <field label="Durée du Minuteur" id="abc102">
+        <sub-field id="abc103" type="duration_long" value="{item.computedtimerduration}"/>
+    </field>
+    </box>
+</bottom>
